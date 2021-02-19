@@ -1,0 +1,232 @@
+<!--
+This is a personal website template (for CS students). The code was taken from - w3.css
+No Copyright
+-->
+<!DOCTYPE html>
+<html>
+<title>John Doe</title> <!--$$TODO: Replace John Doe with your Name-->
+<meta charset="UTF-8">  <!--UTF-8 is the Unicode character set-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--These are stylesheets (CSS)-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--Most elements used are taken from here-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif} /*font family*/
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+<body class="w3-black"> <!--change color if you want class="w3-color"-->
+    
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!--$$TODO src="<path to your photo>" -->
+  <img src="change_me.jfif" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-folder-o w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <!--$$TODO Replace <span><Name></span>-->
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Jane Doe.</h1>
+    <p>Student and Software Developer.</p> <!--Change title is necessary-->
+    <!--$$TODO src="<path to your photo>" -->
+    <img src="change_me.jfif" alt="profile-picture" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <!--$$TODO Change John Doe with <Name> and <p><brief description about you></p>-->
+    <h2 class="w3-text-light-grey">Jane Doe</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Please remove me and add some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <!--Use 3-5 skills-->
+    <!--In each skill change - style="height:28px;width:<X>%" to a certain percentage. X = 100% => expert, 50% => profficient, 25% =>beginner-->
+    <p class="w3-wide">C++</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Object Oriented Programming</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div>
+    <p class="w3-wide">HTML/CSS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">Data Structures</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Assembly Language (x86)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div>
+    <p class="w3-wide">Javascript</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div>
+    <p class="w3-wide">Git/Github</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">Machine Learning</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div>
+    <br>
+    
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <!--$$TODO- Add link to resume href="<path to resume>" -->
+      <a href="resume_template.pdf" download></a>
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+
+    <!-- Education -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Education</h3>  
+    <!--school 1-->
+    <!--$$TODO Add and Change any information to make it personalized-->
+    <img src="LPC Logo.png" alt="Avatar" class="w3-left w3-margin-right" style="width: 80px">
+    <p><span class="w3-large w3-margin-right">Las Positas College, Livermore CA</span><span style="float: right;">Fall 20$$-Spring 20$$</span></p>
+    <p>AS in Something? <span style="float: right;">GPA: 0.0</span></p></p>
+    <div class="w3-padding-12">
+      <p style="padding-top: 10px;">Academic Honors List?</p>
+      <p><span class="w3-medium">Participation:</span> Computer Science Club Member</p>
+    </div>
+    <!--comment out below if you want to add another college or high school-->
+    <!--school 2-->
+    <!-- <img src="<link to school logo>" alt="Avatar" class="w3-left w3-margin-right" style="width: 80px">
+    <p><span class="w3-large w3-margin-right"> <School name> </span><span style="float: right;">Fall 20-Spring 20</span></p>
+    <p> <Degrees> <span style="float: right;">GPA: 0.0</span></p></p>
+    <div class="w3-padding-12">
+      <p style="padding-top: 10px;"> <activites> </p>
+      <p><span class="w3-medium">Participation:</span>  <participation> </p>
+    </div> -->
+  <!-- End About Section -->
+  </div><br>
+  
+  <!-- Portfolio Section -->
+  <!--Can change this into "Relevant Course Work" if you want -->
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Cards for Projects -->
+    <div class="w3-row-padding w3-o" style="margin:0 -16px">
+      <div class="w3-half" style="border: 2px lightgray; border-style: inset; ">
+          <div class="w3-card-4">
+            <!--$$TODO Change the text to make it personalized-->
+              <header class="w3-container w3-opacity w3-center">
+                <h1 style="color: white"> Name of Project </h1>
+              </header>
+              <div class="w3-container w3-center w3-opacity">
+                <p style="color: white">Some text about me. Please remove me and add some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Used : C++, Python, HTML, CSS
+              </p>
+                <footer class="w3-container w3-center w3-opacity">
+                  <!--$$TODO Add link to github where project is hosted. Else delete this part-->
+                  <a href=""><i class="fa fa-github w3-hover-opacity" style="font-size: 24px; padding:2%; color: white"></i></a>
+                </footer>
+              </div>
+        </div>
+      </div>
+      <!-- Add another project-->
+      <div class="w3-half" style="border: 1px lightgray; border-style: inset;">
+        <div class="w3-card-4">
+          <!--$$TODO Change the text to make it personalized-->
+            <header class="w3-container w3-opacity w3-center">
+              <h1 style="color: white"> Name of Project </h1>
+            </header>
+            <div class="w3-container w3-center w3-opacity">
+              <p style="color: white">Some text about me. Please remove me and add some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Used : C++, Python, HTML, CSS
+            </p>
+              <footer class="w3-container w3-center w3-opacity">
+                <!--$$TODO Add link to github where project is hosted. Else delete this part-->
+                <a href=""><i class="fa fa-github w3-hover-opacity" style="font-size: 24px; padding:2%; color: white"></i></a>
+              </footer>
+            </div>
+      </div>
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <!--TODO Change location, phone number and email address-->
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> California, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 12345678</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Name@mail.com</p>
+    </div><br>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+    <!--$$TODO Add any relevant social media links with icons-->
+    <footer class="w3-content w3-padding-12 w3-text-grey w3-center w3-xlarge">
+      <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <a href="link to instagram page"><i class="fa fa-w3-instagram-hover-opacity" style="font-size: 36px; padding:2%"></i></a>
+       <a href="link to twitter page"><i class="fa fa-w3-twitter-hover-opacity" style="font-size: 36px; padding:2%"></i></a>
+      Change padding to 1% if distance betweem icons is too large-->
+      <a href="link to GitHUb"><i class="fa fa-github w3-hover-opacity" style="font-size: 36px; padding:2%"></i></a>
+      <a href="link to Linkedin"> <i class="fa fa-linkedin w3-hover-opacity" style="font-size: 36px; padding:2%"></i></a>
+      <!--MIT Open Source Licensing-->
+      <p style="font-size: 1rem;">Copyright <span><i class="fa fa-copyright" style="font-size:12px"></i></span> year name </year></p> 
+    <!-- End footer -->
+    </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
